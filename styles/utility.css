@@ -1,0 +1,44 @@
+.highlight {
+  color: var(--main-red);
+}
+.highlight--alt {
+  color: var(--main-purple);
+}
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+
+.align-items {
+  align-items: center;
+}
+
+.justify-content {
+  justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+.container {
+  max-width: 80em;
+  width: 100%;
+  margin-inline: auto;
+  padding: 30px;
+}
+
+.description {
+  font: var(--text-md);
+  color: var(--base-gray-400);
+}
+
+.subtitle {
+  font: var(--subtitle);
+}

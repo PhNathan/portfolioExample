@@ -1,0 +1,25 @@
+#services {
+  background-color: var(--base-gray-100);
+  & .container {
+    padding-block: 40px;
+  }
+  & > header {
+    padding-top: 5.5rem;
+    text-align: center;
+  }
+
+  & .services-wrapper {
+    margin-block: 1rem;
+
+    & .service-card {
+      flex: 1 1 280px;
+      border: 2px solid #16181d;
+      padding: 2rem;
+      border-radius: 12px;
+      transition: border 300ms ease;
+      &:hover {
+        border-color: var(--base-gray-400);
+      }
+    }
+  }
+}

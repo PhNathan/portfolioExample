@@ -1,0 +1,97 @@
+#contact {
+  background-image: url(../assets/Background_Intro.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+
+  & > header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 8rem;
+  }
+
+  & .links-wrapper {
+    max-width: 400px;
+    margin-inline: auto;
+
+    & .link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      padding: 1.5rem 3rem;
+      font: var(--text-md);
+      color: var(--base-gray-500);
+      background-color: var(--base-gray-300);
+      border-radius: 0.5rem;
+      text-transform: capitalize;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      outline: 2px solid transparent;
+      transition: outline 300ms ease;
+
+      &:hover {
+        outline: 2px solid var(--main-blue);
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 10px;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        transition: background-image 300ms ease;
+      }
+
+      &:nth-child(1):before {
+        background: url(../assets/icons/LinkedinLogo.svg);
+      }
+
+      &:nth-child(1):hover::before {
+        background: url(../assets/icons/LinkedinLogo-alt.svg);
+      }
+
+      &:nth-child(2):before {
+        background: url(../assets/icons/InstagramLogo.svg);
+      }
+
+      &:nth-child(2):hover::before {
+        background: url(../assets/icons/InstagramLogo-alt.svg);
+      }
+
+      &:nth-child(3):before {
+        background: url(../assets/icons/GithubLogo.svg);
+      }
+
+      &:nth-child(3):hover::before {
+        background: url(../assets/icons/GithubLogo-alt.svg);
+      }
+
+      &:nth-child(4):before {
+        background: url(../assets/icons/EnvelopeSimple.svg);
+      }
+
+      &:nth-child(4):hover::before {
+        background: url(../assets/icons/EnvelopeSimple-alt.svg);
+      }
+
+      &:hover::after {
+        background-image: url(../assets/icons/ArrowUpRight-alt.svg);
+      }
+
+      &::after {
+        content: "";
+        right: 20px;
+        position: absolute;
+        background: url(../assets/icons/ArrowUpRight.svg) no-repeat;
+        display: block;
+        width: 20px;
+        height: 20px;
+        transition: background-image 300ms ease;
+      }
+    }
+  }
+}
